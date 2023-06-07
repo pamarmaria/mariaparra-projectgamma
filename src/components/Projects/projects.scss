@@ -1,0 +1,12 @@
+.projects {
+    margin: 100px auto 150px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.projects img {
+    width: 45%;
+    border: solid 1px black;
+}

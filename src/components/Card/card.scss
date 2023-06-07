@@ -1,0 +1,73 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 100px auto 110px auto;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card__image {
+    width: 70%;
+    border: solid 1px black;
+    margin-left: -65px;
+    max-height: 70vh;
+    overflow: scroll;
+
+    img {
+      max-width: 100%;
+    }
+}
+
+.card__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    margin-left: -70px;
+}
+
+    .card__link p {
+        transform: rotate(-90deg);
+        margin-bottom: 50px;
+    }
+
+    .card__link img {
+        width: 10px;
+        animation: arrowAnimation 1.5s infinite;
+    }
+    
+    @keyframes arrowAnimation {
+      0% {
+        transform: translateY(10px);
+      }
+      50% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(10px);
+      }
+    }
+    .card__dots {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+      }
+      
+      .card__dot {
+        width: 2px;
+        height: 20vh;
+        margin-left: 20px;
+        background-color: #000;
+        margin: 0 4px;
+        opacity: 0.5;
+        transition: opacity 0.3s;
+      }
+      
+      .card__dot.active {
+        opacity: 1;
+      }
+      

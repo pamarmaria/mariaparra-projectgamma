@@ -1,0 +1,165 @@
+:root {
+    //Colors
+
+        //Accent colors:
+        --color-orange:                   #FF8A5E;
+        --color-pink:                     #FFD6E3;
+        --color-green:                    #A0DABA;
+        --color-blue:                     #AFD1ED;
+
+        //Greyscale:
+        --color-greyscale1:               #EAEAEC;
+        --color-greyscale2:               #888989;
+        --color-greyscale3:              #222222;
+
+        //Neutral Colors:
+        --color-white:                    #ffffff;
+        --color-black:                    #000000;
+
+        
+        //Backgrounds:
+        --bg-color-orange:                   var(--color-orange);
+        --bg-color-pink:                     var(--color-pink);
+        --bg-color-green:                    var(--color-green);
+        --bg-color-blue:                     var(--color-blue);
+        --bg-color-white:                    var(--color-white);
+        --bg-color-black:                    var(--color-black);
+
+
+    //Fonts
+
+    --typo-main:                  'Manrope', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap');
+
+* , *::before , *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--typo-main);
+    color: var(--color-black);
+    background-color: var(--bg-color-white);
+    margin: auto;
+}
+
+main {
+    width: 100%;
+    background-color: transparent;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .topbar, .footer {
+      position: fixed;
+      width: 100%;
+      background-color: white;
+      padding: 0 60px;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .topbar {
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+
+      .topbar__logo {
+        margin-top: 40px;
+      }
+
+        .topbar__logo img {
+          width: 100px;
+        }
+
+      .topbar__menu {
+        margin-top: 30px;
+      }
+    
+      .menu__dropdown {
+          position: relative;
+          display: inline-block;
+      }
+      
+      .dropbtn {
+          color: #000;
+          font-size: 24px;
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+      }
+    
+    .footer {
+      bottom: 0;
+      left: 0;
+      font-size: 1.8rem;
+    }
+
+    .home__content {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .home__content__headers {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    
+    .home__content__headers h1 {
+      font-size: 8rem;
+      font-weight: 800;
+      margin-bottom: 30px;
+    }
+    
+    .home__content__headers h2 {
+      font-size: 4rem;
+      font-weight: 400;
+    }
+    
+    .home__content__scroll {
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      align-items: center;
+      z-index: 1;
+    }
+    
+    .arrow-down {
+      width: 10px;
+      animation: arrowAnimation 1.5s infinite;
+    }
+    
+    @keyframes arrowAnimation {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+    }

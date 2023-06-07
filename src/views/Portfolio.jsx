@@ -1,21 +1,20 @@
-import Card from '../components/Card/Card';
+import Projects from '../components/Projects/Projects';
 
-export default function Home() {
-
-  return (
+export default function Portfolio() {
+  
+    return (
     <>
         <div className="home__content">
             <div className="home__content__headers">
-                <h1>Maria Parra</h1>
-                <h2>Desarrolladora y Diseñadora Web</h2>
+                <h1>portfolio</h1>
             </div>
-            <div className="home__content__scroll" onClick={() => setShowCard(true)}>
+            <div className="home__content__scroll">
                 <img className="mouse" src="../../svg/mouse.svg" alt="mouse scroll down" />
                 <img className="arrow-down" src="../../svg/arrow-down.svg" alt="arrow scroll down" />
             </div>
         </div>
 
-      <Card />
+        <Projects />
     </>
   );
 }
