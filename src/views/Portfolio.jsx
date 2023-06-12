@@ -4,11 +4,11 @@ export default function Portfolio() {
   
     return (
     <>
-        <div className="home__content">
-            <div className="home__content__headers">
+        <div className="view__content">
+            <div className="portfolio__title">
                 <h1>portfolio</h1>
             </div>
-            <div className="home__content__scroll">
+            <div className="scroll__icon">
                 <img className="mouse" src="../../svg/mouse.svg" alt="mouse scroll down" />
                 <img className="arrow-down" src="../../svg/arrow-down.svg" alt="arrow scroll down" />
             </div>

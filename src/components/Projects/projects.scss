@@ -1,12 +1,25 @@
+@import '../../styles/mediaqueries';
+
 .projects {
-    margin: 100px auto 150px auto;
+    margin: 0 auto 70px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+
+    @include MQ ($desktop) {
+        margin: 110px auto;
+        flex-direction: row;
+    }
 }
 
-.projects img {
-    width: 45%;
-    border: solid 1px black;
-}
+    .projects a {
+        flex: 0 0 45%;
+    }
+  
+    .projects img {
+        width: 100%;
+        height: auto;
+        border: solid 1px black;
+    }

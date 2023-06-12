@@ -2,44 +2,40 @@
     {
         "title": "Grupo Terra de Mar",
         "img": "../../img/captura-terrademar.jpg",
+        "mobile-img": "../../img/captura-mobile-terrademar.jpg",
         "url": "https://grupoterrademar.com",
         "featured": true
     },
     {
         "title": "Tintoreria Azul",
         "img": "../../img/captura-tintoreriaazul.jpg",
+        "mobile-img": "../../img/captura-mobile-tintoreriaazul.jpg",
         "url": "https://tintoreriaazul.es/",
         "featured": true
     },
     {
         "title": "Be Woman 360",
         "img": "../../img/captura-bewoman.jpg",
+        "mobile-img": "../../img/captura-mobile-bewoman.jpg",
         "url": "https://bewoman360.com/reto-hipopresivos/",
         "featured": true
     },
     {
         "title": "Club Tenis Buenavista Benissa",
         "img": "../../img/captura-tenisbuenavista.jpg",
-        "url": "https://grupoterrademar.com"
+        "mobile-img": "../../img/captura-mobile-tenisbuenavista.jpg",
+        "url": "https://tenisbuenavista.com/"
     },
     {
-        "title": "Grupo Terra de Mar",
-        "img": "../../img/captura-terrademar.jpg",
-        "url": "https://grupoterrademar.com"
+        "title": "Notaria de El Campello",
+        "img": "../../img/captura-notariacampello.jpg",
+        "mobile-img": "../../img/captura-mobile-notariacampello.jpg",
+        "url": "http://www.notariadecampello.com/"
     },
     {
-        "title": "Grupo Terra de Mar",
-        "img": "../../img/captura-terrademar.jpg",
-        "url": "https://grupoterrademar.com"
-    },
-    {
-        "title": "Grupo Terra de Mar",
-        "img": "../../img/captura-terrademar.jpg",
-        "url": "https://grupoterrademar.com"
-    },
-    {
-        "title": "Grupo Terra de Mar",
-        "img": "../../img/captura-terrademar.jpg",
-        "url": "https://grupoterrademar.com"
+        "title": "Milam Teles Mercería",
+        "img": "../../img/captura-milamteles.jpg",
+        "mobile-img": "../../img/captura-mobile-milamteles.jpg",
+        "url": "https://milamteles.com/"
     }
   ]

@@ -13,11 +13,9 @@ function App() {
             <img src="../svg/logo-portfolio.svg" alt="Logo"/>
         </Link>
         <div className="topbar__menu">
-            <div className="menu__dropdown">
-                <Link to="/portfolio" className="menu__item--link">Portfolio</Link>
-                <Link to="/about" className="menu__item--link">About</Link>
-                <button className="dropbtn">Menu</button>
-            </div>
+              <Link to="/portfolio" className="menu__item--link">Portfolio</Link>
+              <Link to="/about" className="menu__item--link">About</Link>
+              <button className="menu__item--btn"><p>Menu</p></button>
         </div>
       </header>
     <main>
@@ -28,12 +26,21 @@ function App() {
       </Routes>
     </main>
     <footer className="footer">
-        <div className="social-icons">
-          <a href="">Instagram</a>
-          <a href="">Behance</a>
-          <a href="">Dribble</a>
+        <div className="social__icons">
+          <a href="https://www.instagram.com/" target='_blank'>
+            <p>Instagram</p>
+            <img src="../svg/instagram.svg" alt="" />
+          </a>
+          <a href="https://www.behance.net/" target='_blank'>
+            <p>Behance</p>
+            <img src="../svg/behance.svg" alt="" />
+          </a>
+          <a href="https://dribbble.com/" target='_blank'>
+            <p>Dribble</p>
+            <img src="../svg/dribbble.svg" alt="" />
+          </a>
         </div>
-        <div className="contact-email">hola@mariaparra.com</div>
+        <a href='mailto:hola@mariaparra.com'>hola@mariaparra.com</a>
     </footer>
     </>
   )
