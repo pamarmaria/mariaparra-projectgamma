@@ -8,8 +8,12 @@
     gap: 20px;
     justify-content: center;
 
+    @include MQ ($tablet) {
+        margin: 0 auto 100px;
+    }
+
     @include MQ ($desktop) {
-        margin: 110px auto;
+        margin: 100px auto 80px auto;
         flex-direction: row;
     }
 }

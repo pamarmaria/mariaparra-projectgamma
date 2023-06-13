@@ -1,10 +1,15 @@
-import { Link, Route, Routes } from 'react-router-dom'
+import { useState } from 'react';
+import { Link, Route, Routes, useLocation } from 'react-router-dom'
 import "./styles/globalStyle.scss"
 import Home from './views/Home'
 import About from './views/About'
 import Portfolio from './views/Portfolio'
 
+
 function App() {
+
+  const location = useLocation();
+  const [activePage, setActivePage] = useState(location.pathname);
 
   return (
     <>
@@ -13,8 +18,10 @@ function App() {
             <img src="../svg/logo-portfolio.svg" alt="Logo"/>
         </Link>
         <div className="topbar__menu">
-              <Link to="/portfolio" className="menu__item--link">Portfolio</Link>
-              <Link to="/about" className="menu__item--link">About</Link>
+              <Link to="/portfolio" className={`menu__item--link ${location.pathname === '/portfolio' ? 'active' : ''}`}
+        onClick={() => setActivePage('/portfolio')}>Portfolio</Link>
+              <Link to="/about" className={`menu__item--link ${location.pathname === '/about' ? 'active' : ''}`}
+        onClick={() => setActivePage('/about')}>About</Link>
               <button className="menu__item--btn"><p>Menu</p></button>
         </div>
       </header>

@@ -9,7 +9,7 @@ export default function Card() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 1024);
     };
 
     handleResize();
@@ -39,6 +39,7 @@ export default function Card() {
             return <img key={index} src={imageSource} alt="Captura del proyecto" />;
           }
         })}
+        
       </div>
       <div className="card__dots">
         { projects.map((project, index) => project.featured === true ? <div className={'card__dot' + (index === activeProject ? ' active' : '')} /> : '')}

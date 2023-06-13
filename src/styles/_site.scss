@@ -58,6 +58,10 @@ main {
     justify-content: center;
     align-items: center;
 
+    @include MQ ($tablet) {
+      padding: 0 60px;
+    }
+
     @include MQ ($desktop) {
       padding: 0 60px;
     }
@@ -75,6 +79,10 @@ main {
     justify-content: space-between;
     align-items: center;
 
+    @include MQ ($tablet) {
+      padding: 20px 60px;
+    }
+
     @include MQ ($desktop) {
       padding: 0 60px;
     }
@@ -84,7 +92,7 @@ main {
   .topbar {
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 100;
   }
 
     .topbar__logo {
@@ -94,6 +102,10 @@ main {
 
       .topbar__logo img {
         width: 80px;
+
+        @include MQ ($tablet) {
+          width: 100px;
+        }
 
         @include MQ ($desktop) {
           width: 100px;
@@ -115,12 +127,17 @@ main {
       margin-left: 15px;
       margin-bottom: 0;
 
+      &.active {
+        color: var(--color-orange);
+      }
+
       @include MQ ($desktop) {
         opacity: 0;
         transition: opacity 0.3s;
         margin-right: 15px;
         margin-left: 0;
-        font-size: 2rem;
+        font-weight: 300;
+        font-size: 2.2rem;
       }
     }
     
@@ -136,9 +153,10 @@ main {
       }
 
       & p {
-        font-size: 2.4rem;
         margin: 0;
+        line-height: 0;
         font-weight: 400;
+        font-size: 2.2rem;
       }
     }
 
@@ -160,7 +178,6 @@ main {
     }
 
     .social__icons a {
-      margin: 0;
 
       @include MQ ($desktop) {
         margin: auto;
@@ -169,6 +186,11 @@ main {
 
     .social__icons p {
       display: none;
+
+      @include MQ ($tablet) {
+        display: block;
+        margin: 0;
+      }
       
       @include MQ ($desktop) {
         display: block;
@@ -179,7 +201,12 @@ main {
       width: 20px;
       height: auto;
 
+      @include MQ ($tablet) {
+        display: none;
+      }
+
       @include MQ ($desktop) {
         display: none;
       }
     }
+
